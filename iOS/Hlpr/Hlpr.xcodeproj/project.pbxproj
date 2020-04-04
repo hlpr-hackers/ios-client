@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05667680243946C400C12DB6 /* SelectTask.storyboard */; };
+		05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05667681243946C400C12DB6 /* SelectTaskViewController.swift */; };
+		05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */; };
+		05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */; };
+		0566768B2439471000C12DB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676892439471000C12DB6 /* Utilities.swift */; };
+		0566768C2439471000C12DB6 /* CallUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768A2439471000C12DB6 /* CallUtility.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
@@ -20,7 +26,7 @@
 		167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */; };
 		167CBF0B2438A023009B2E70 /* HlprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF0A2438A023009B2E70 /* HlprTests.swift */; };
 		167CBF162438A023009B2E70 /* HlprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF152438A023009B2E70 /* HlprUITests.swift */; };
-		167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift */; };
+		167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */; };
 		167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */; };
 		167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF302438A23B009B2E70 /* ButtonWithImage.swift */; };
 		167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF322438A34A009B2E70 /* UIConstants.swift */; };
@@ -49,6 +55,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05667680243946C400C12DB6 /* SelectTask.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectTask.storyboard; sourceTree = "<group>"; };
+		05667681243946C400C12DB6 /* SelectTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskViewController.swift; sourceTree = "<group>"; };
+		05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecommendedHelpSeeker.storyboard; sourceTree = "<group>"; };
+		05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedHelpSeekerViewController.swift; sourceTree = "<group>"; };
+		056676892439471000C12DB6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0566768A2439471000C12DB6 /* CallUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUtility.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
@@ -68,7 +80,7 @@
 		167CBF112438A023009B2E70 /* HlprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HlprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		167CBF152438A023009B2E70 /* HlprUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlprUITests.swift; sourceTree = "<group>"; };
 		167CBF172438A023009B2E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryForProvidingHelp.swift; sourceTree = "<group>"; };
+		167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryForProvidingHelpViewController.swift; sourceTree = "<group>"; };
 		167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCategoryForProvidingHelp.storyboard; sourceTree = "<group>"; };
 		167CBF302438A23B009B2E70 /* ButtonWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithImage.swift; sourceTree = "<group>"; };
 		167CBF322438A34A009B2E70 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
@@ -104,6 +116,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0566767F243946C400C12DB6 /* SelectHelpSeeker */ = {
+			isa = PBXGroup;
+			children = (
+				05667680243946C400C12DB6 /* SelectTask.storyboard */,
+				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
+				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
+				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
+			);
+			path = SelectHelpSeeker;
+			sourceTree = "<group>";
+		};
+		056676882439471000C12DB6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				056676892439471000C12DB6 /* Utilities.swift */,
+				0566768A2439471000C12DB6 /* CallUtility.swift */,
+			);
+			name = Utils;
+			path = Hlpr/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
 		160968FA2439180400F5E91E /* Helper protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +178,7 @@
 			children = (
 				16096903243919EC00F5E91E /* Styling */,
 				167CBF3C2438B4A0009B2E70 /* Domain */,
+				056676882439471000C12DB6 /* Utils */,
 				167CBF2E2438A225009B2E70 /* UI */,
 				167CBEF32438A022009B2E70 /* AppDelegate.swift */,
 				167CBEF52438A022009B2E70 /* SceneDelegate.swift */,
@@ -196,6 +230,7 @@
 		167CBF252438A04B009B2E70 /* OfferHelp */ = {
 			isa = PBXGroup;
 			children = (
+				0566767F243946C400C12DB6 /* SelectHelpSeeker */,
 				167CBF272438A126009B2E70 /* SelectCategory */,
 			);
 			path = OfferHelp;
@@ -213,7 +248,7 @@
 		167CBF272438A126009B2E70 /* SelectCategory */ = {
 			isa = PBXGroup;
 			children = (
-				167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift */,
+				167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */,
 				167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */,
 			);
 			path = SelectCategory;
@@ -374,7 +409,9 @@
 				167CBEFD2438A023009B2E70 /* Assets.xcassets in Resources */,
 				167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */,
 				167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */,
+				05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */,
 				167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */,
+				05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,11 +437,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
 				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
+				05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */,
 				167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */,
 				167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */,
-				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift in Sources */,
+				0566768B2439471000C12DB6 /* Utilities.swift in Sources */,
+				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */,
+				05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */,
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,

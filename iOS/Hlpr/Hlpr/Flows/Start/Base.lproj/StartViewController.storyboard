@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RgZ-A8-9UI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RgZ-A8-9UI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -45,8 +45,8 @@
                     <connections>
                         <outlet property="getHelpButton" destination="wAZ-6n-m5s" id="u94-zI-vnu"/>
                         <outlet property="offerHelpButton" destination="DYn-tW-7hQ" id="TAV-zR-0rw"/>
-                        <segue destination="gg0-9a-dIA" kind="show" identifier="navigateToOfferHelp" id="zhu-M9-Qnc"/>
-                        <segue destination="VUL-jc-wBS" kind="show" identifier="navigateToGetHelp" id="pZ3-FI-Z95"/>
+                        <segue destination="gg0-9a-dIA" kind="show" identifier="navigateToGetHelp" id="zhu-M9-Qnc"/>
+                        <segue destination="VUL-jc-wBS" kind="show" identifier="navigateToOfferHelp" id="pZ3-FI-Z95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

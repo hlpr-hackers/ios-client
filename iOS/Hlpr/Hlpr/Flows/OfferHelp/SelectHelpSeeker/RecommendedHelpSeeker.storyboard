@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kyr-lV-g5w">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Recommended Help Seeker View-->
+        <scene sceneID="4gr-zc-H31">
+            <objects>
+                <viewController id="kyr-lV-g5w" userLabel="Recommended Help Seeker View" customClass="RecommendedHelpSeekerViewController" customModule="Hlpr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3Zd-y8-0NX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="uCH-Dn-BJX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ong-aD-UYx">
+                                        <rect key="frame" x="0.0" y="1" width="414" height="375.66666666666669"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="ong-aD-UYx" secondAttribute="height" multiplier="67:61" id="ibZ-m7-NFq"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mr. Awesome" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-UJ-PIX" userLabel="User Name View">
+                                        <rect key="frame" x="0.0" y="379" width="414" height="47"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="47" id="NfY-vD-1lw"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An awesome task" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-bc-Acn" userLabel="Task Description View">
+                                        <rect key="frame" x="0.0" y="428" width="414" height="54"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="V74-8B-RAg"/>
+                                        </constraints>
+                                        <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-pf-zjB">
+                                        <rect key="frame" x="0.0" y="484" width="414" height="302"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Call Now" image="phone" catalog="system">
+                                            <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-f0-hn0">
+                                        <rect key="frame" x="0.0" y="788" width="414" height="30"/>
+                                        <state key="normal" title="More Tasks"/>
+                                    </button>
+                                </subviews>
+                                <viewLayoutGuide key="safeArea" id="ahG-IP-5J4"/>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="uCH-Dn-BJX" firstAttribute="leading" secondItem="YST-yc-EAN" secondAttribute="leading" id="C7O-tv-XLX"/>
+                            <constraint firstItem="uCH-Dn-BJX" firstAttribute="top" secondItem="YST-yc-EAN" secondAttribute="top" id="kr2-Nh-6L9"/>
+                            <constraint firstItem="YST-yc-EAN" firstAttribute="trailing" secondItem="uCH-Dn-BJX" secondAttribute="trailing" id="s96-ka-0QN"/>
+                            <constraint firstItem="YST-yc-EAN" firstAttribute="bottom" secondItem="uCH-Dn-BJX" secondAttribute="bottom" id="ymq-X8-9nw"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YST-yc-EAN"/>
+                    </view>
+                    <connections>
+                        <outlet property="callNowButton" destination="b8H-pf-zjB" id="mBH-pB-Yd5"/>
+                        <outlet property="moreTasksButton" destination="ugu-f0-hn0" id="bxX-Sr-Nsl"/>
+                        <outlet property="view" destination="ugu-f0-hn0" id="dby-Dt-QMz"/>
+                        <segue destination="eQM-mA-mav" kind="show" id="zvd-OZ-DWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="igh-ch-fDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-5.5999999999999996" y="-28.335832083958024"/>
+        </scene>
+        <!--SelectTask-->
+        <scene sceneID="0wN-tB-kBx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectTask" id="eQM-mA-mav" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="yEF-X9-gWo"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeK-D3-3be" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="855" y="-44"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle" catalog="system" width="128" height="121"/>
+        <image name="phone" catalog="system" width="128" height="115"/>
+    </resources>
+</document>
