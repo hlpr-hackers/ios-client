@@ -9,7 +9,6 @@
 import UIKit
 
 class SelectCategoryForGettingHelpViewController: StyledViewController {
-
     let categories: [Category] = {
         /// TODO: Fetch from API
         return [
@@ -23,8 +22,17 @@ class SelectCategoryForGettingHelpViewController: StyledViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let title = "I can help to"
-        SelectCategoryStyler.style(&view, with: categories, title: title)
+        let styler = SelectCategoryStyler(view: view)
+        styler.style(with: categories, title: title)
+        
+        styler.categoryGroupView?.delegate = self
     }
+}
 
+extension SelectCategoryForGettingHelpViewController: CategoryViewDelegate {
+    func didSelectItem(forCategory category: Category) {
+        /// TODO: Navigate somewhere
+    }
 }

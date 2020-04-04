@@ -10,9 +10,17 @@ import UIKit
 
 class SelectCategoryStyler {
     
-    static func style(_ view: inout UIView,
-                      with categories: [Category],
-                      title: String) {
+    var view: UIView
+    
+    /// Elements to style
+    private(set) var categoryGroupView: CategoryGroupView?
+    
+    init(view: UIView) {
+        self.view = view
+    }
+    
+    func style(with categories: [Category],
+               title: String) {
         let scrollView = setUpScrollView(in: &view)
         let contentStackView = setUpContentStackView(into: scrollView)
 
@@ -21,12 +29,12 @@ class SelectCategoryStyler {
         contentStackView.addArrangedSubview(titleLabel)
         
         /// Category group
-        let categoryGroupView = setUpCategoryGroupView(with: categories)
-        contentStackView.addArrangedSubview(categoryGroupView)
+        self.categoryGroupView = setUpCategoryGroupView(with: categories)
+        contentStackView.addArrangedSubview(categoryGroupView!)
     }
     
     @discardableResult
-    private static func setUpScrollView(in view: inout UIView) -> UIScrollView {
+    private func setUpScrollView(in view: inout UIView) -> UIScrollView {
         let scrollView = UIScrollView()
         scrollView.translatesAutoresizingMaskIntoConstraints = false
         scrollView.alwaysBounceVertical = true
@@ -44,7 +52,7 @@ class SelectCategoryStyler {
     }
     
     @discardableResult
-    private static func setUpContentStackView(into scrollView: UIScrollView) -> UIStackView {
+    private func setUpContentStackView(into scrollView: UIScrollView) -> UIStackView {
         let contentStackView = UIStackView()
         contentStackView.translatesAutoresizingMaskIntoConstraints = false
         contentStackView.axis = .vertical
@@ -70,7 +78,7 @@ class SelectCategoryStyler {
     }
     
     @discardableResult
-    private static func setUpTitleLabel(title: String) -> UILabel {
+    private func setUpTitleLabel(title: String) -> UILabel {
         let label = UILabel()
         label.font = UIFont.preferredFont(forTextStyle: .title1)
         label.text = title
@@ -79,7 +87,7 @@ class SelectCategoryStyler {
     }
     
     @discardableResult
-    private static func setUpCategoryGroupView(with categories: [Category]) -> CategoryGroupView {
+    private func setUpCategoryGroupView(with categories: [Category]) -> CategoryGroupView {
         let categoryGroupView = CategoryGroupView()
         categoryGroupView.translatesAutoresizingMaskIntoConstraints = false
         categoryGroupView.categories = categories

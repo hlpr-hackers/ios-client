@@ -9,6 +9,9 @@
 import UIKit
 
 class HorizontalCategoryView: UIStackView {
+    
+    weak var delegate: CategoryViewDelegate?
+    
     init(categories: [Category]) {
         assert(categories.count > 0, "There should be at least one category to create a horizontal category view")
         
@@ -22,11 +25,18 @@ class HorizontalCategoryView: UIStackView {
         /// Set constraints
         for category in categories {
             let categoryView = CategoryView(category: category)
+            categoryView.delegate = self
             addArrangedSubview(categoryView)
         }
     }
     
     required init(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+}
+
+extension HorizontalCategoryView: CategoryViewDelegate {
+    func didSelectItem(forCategory category: Category) {
+        delegate?.didSelectItem(forCategory: category)
     }
 }

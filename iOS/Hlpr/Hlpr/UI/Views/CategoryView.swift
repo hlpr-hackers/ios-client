@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol CategoryViewDelegate: class {
+    func didSelectItem(forCategory category: Category)
+}
+
 class CategoryView: ButtonWithImage {
     
     /// Objects
-    var category: Category?
+    var category: Category!
+    weak var delegate: CategoryViewDelegate?
     
     /// Modifiers
     var title: String? {
@@ -29,7 +34,6 @@ class CategoryView: ButtonWithImage {
     /// Initialization
     
     init(category: Category) {
-            
         super.init(frame: .zero)
         
         configure(for: category)
@@ -37,6 +41,8 @@ class CategoryView: ButtonWithImage {
         self.backgroundColor = UIConstants.color.itemBackgroundColors[colorId]
         
         setUpShadow()
+        
+        addTarget(self, action: #selector(didPressButton), for: .touchUpInside)
     }
     
     required init(coder: NSCoder) {
@@ -51,5 +57,10 @@ class CategoryView: ButtonWithImage {
     override func layoutSubviews() {
         super.layoutSubviews()
         updateShadow()
+    }
+    
+    /// Targets
+    @objc func didPressButton() {
+        delegate?.didSelectItem(forCategory: category)
     }
 }

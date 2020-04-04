@@ -11,6 +11,7 @@ import UIKit
 class CategoryGroupView: UIView {
     
     var stackView: UIStackView!
+    weak var delegate: CategoryViewDelegate?
     
     var categories: [Category] = [] {
         didSet {
@@ -72,10 +73,18 @@ class CategoryGroupView: UIView {
         }
         if categories.count > 1 {
             let horizontalCategoryView = HorizontalCategoryView(categories: categories)
+            horizontalCategoryView.delegate = self
             stackView.addArrangedSubview(horizontalCategoryView)
         } else {
             let categoryView = CategoryView(category: categories[0])
+            categoryView.delegate = self
             stackView.addArrangedSubview(categoryView)
         }
+    }
+}
+
+extension CategoryGroupView: CategoryViewDelegate {
+    func didSelectItem(forCategory category: Category) {
+        delegate?.didSelectItem(forCategory: category)
     }
 }

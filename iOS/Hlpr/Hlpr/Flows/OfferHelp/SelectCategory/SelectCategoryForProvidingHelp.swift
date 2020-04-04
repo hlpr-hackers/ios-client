@@ -23,7 +23,17 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         let title = "I need help to"
-        SelectCategoryStyler.style(&view, with: categories, title: title)
+        let styler = SelectCategoryStyler(view: view)
+        styler.style(with: categories, title: title)
+        
+        styler.categoryGroupView?.delegate = self
+    }
+}
+
+extension SelectCategoryForProvidingHelpViewController: CategoryViewDelegate {
+    func didSelectItem(forCategory category: Category) {
+        /// TODO: Navigate somewhere
     }
 }
