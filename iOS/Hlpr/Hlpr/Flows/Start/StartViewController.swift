@@ -8,7 +8,7 @@
 
 import UIKit
 
-class StartViewController: UIViewController {
+class StartViewController: StyledViewController {
 
     @IBOutlet weak var getHelpButton: ButtonWithImage?
     @IBOutlet weak var offerHelpButton: ButtonWithImage?

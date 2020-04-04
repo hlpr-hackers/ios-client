@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
+		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
+		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
+		160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FF2439184B00F5E91E /* CategoryGroupView.swift */; };
+		160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160969012439189800F5E91E /* SelectCategoryStyler.swift */; };
 		167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF32438A022009B2E70 /* AppDelegate.swift */; };
 		167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF52438A022009B2E70 /* SceneDelegate.swift */; };
 		167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF72438A022009B2E70 /* StartViewController.swift */; };
@@ -22,6 +27,8 @@
 		167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF342438A5A5009B2E70 /* NavigationConstants.swift */; };
 		167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBF362438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard */; };
 		167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */; };
+		167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF3E2438B4B2009B2E70 /* Category.swift */; };
+		167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF402438B5ED009B2E70 /* CategoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +49,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
+		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
+		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
+		160968FF2439184B00F5E91E /* CategoryGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGroupView.swift; sourceTree = "<group>"; };
+		160969012439189800F5E91E /* SelectCategoryStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryStyler.swift; sourceTree = "<group>"; };
 		167CBEF02438A022009B2E70 /* Hlpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167CBEF32438A022009B2E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		167CBEF52438A022009B2E70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +75,8 @@
 		167CBF342438A5A5009B2E70 /* NavigationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConstants.swift; sourceTree = "<group>"; };
 		167CBF362438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectCategoryForGettingHelp.storyboard; sourceTree = "<group>"; };
 		167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryForGettingHelpViewController.swift; sourceTree = "<group>"; };
+		167CBF3E2438B4B2009B2E70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		167CBF402438B5ED009B2E70 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		160968FA2439180400F5E91E /* Helper protocols */ = {
+			isa = PBXGroup;
+			children = (
+				160968FB2439181100F5E91E /* Shadowed.swift */,
+			);
+			path = "Helper protocols";
+			sourceTree = "<group>";
+		};
+		16096903243919EC00F5E91E /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				160969012439189800F5E91E /* SelectCategoryStyler.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
 		167CBEE72438A022009B2E70 = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +143,8 @@
 		167CBEF22438A022009B2E70 /* Hlpr */ = {
 			isa = PBXGroup;
 			children = (
+				16096903243919EC00F5E91E /* Styling */,
+				167CBF3C2438B4A0009B2E70 /* Domain */,
 				167CBF2E2438A225009B2E70 /* UI */,
 				167CBEF32438A022009B2E70 /* AppDelegate.swift */,
 				167CBEF52438A022009B2E70 /* SceneDelegate.swift */,
@@ -200,6 +232,8 @@
 			isa = PBXGroup;
 			children = (
 				167CBF322438A34A009B2E70 /* UIConstants.swift */,
+				160968F82438F8A100F5E91E /* StyledViewController.swift */,
+				160968FA2439180400F5E91E /* Helper protocols */,
 				167CBF2F2438A22A009B2E70 /* Views */,
 			);
 			path = UI;
@@ -208,9 +242,28 @@
 		167CBF2F2438A22A009B2E70 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				160968FD2439182800F5E91E /* HorizontalCategoryView.swift */,
+				167CBF402438B5ED009B2E70 /* CategoryView.swift */,
 				167CBF302438A23B009B2E70 /* ButtonWithImage.swift */,
+				160968FF2439184B00F5E91E /* CategoryGroupView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		167CBF3C2438B4A0009B2E70 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF3D2438B4A9009B2E70 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		167CBF3D2438B4A9009B2E70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF3E2438B4B2009B2E70 /* Category.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,14 +399,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
 				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
 				167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */,
 				167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */,
 				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelp.swift in Sources */,
+				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
+				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
+				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
+				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
 				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
+				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

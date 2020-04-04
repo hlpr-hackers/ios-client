@@ -8,12 +8,22 @@
 
 import UIKit
 
-class SelectCategoryForProvidingHelpViewController: UIViewController {
+class SelectCategoryForProvidingHelpViewController: StyledViewController {
 
+    let categories: [Category] = {
+        /// TODO: Fetch from API
+        return [
+            Category(id: "1", name: "Pick up groceries", relevance: .high),
+            Category(id: "2", name: "Throw the garbage", relevance: .normal),
+            Category(id: "3", name: "Buy groceries", relevance: .high),
+            Category(id: "4", name: "Send a letter", relevance: .normal),
+            Category(id: "5", name: "Other", relevance: .normal)
+        ]
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let title = "I need help to"
+        SelectCategoryStyler.style(&view, with: categories, title: title)
     }
-
-    
 }
