@@ -13,6 +13,9 @@ struct NavigationConstants {
         enum StartViewController: String {
             case navigateToOfferHelp, navigateToGetHelp
         }
+        enum SelectCategoryForGettingHelpViewController: String {
+            case navigateToAddContactInformation
+        }
         enum RecommendedHelpSeekerViewController: String {
             case navigateToSelectTask
         }

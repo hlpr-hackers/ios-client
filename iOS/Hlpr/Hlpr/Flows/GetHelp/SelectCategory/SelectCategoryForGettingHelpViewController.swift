@@ -33,6 +33,9 @@ class SelectCategoryForGettingHelpViewController: StyledViewController {
 
 extension SelectCategoryForGettingHelpViewController: CategoryViewDelegate {
     func didSelectItem(forCategory category: Category) {
-        /// TODO: Navigate somewhere
+        let requestHelp = RequestHelp(category: category,
+                                      contactInformation: nil)
+        let viewController = AddContactInformationViewController(requestHelp: requestHelp)
+        navigationController?.show(viewController, sender: self)
     }
 }
