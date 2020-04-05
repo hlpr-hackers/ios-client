@@ -41,6 +41,8 @@
 		167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF3E2438B4B2009B2E70 /* Category.swift */; };
 		167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF402438B5ED009B2E70 /* CategoryView.swift */; };
 		16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */; };
+		16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */; };
+		16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F22439F26A00072D14 /* ContactFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,8 @@
 		167CBF3E2438B4B2009B2E70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		167CBF402438B5ED009B2E70 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
 		16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewConfigurator.swift; sourceTree = "<group>"; };
+		16CD99F22439F26A00072D14 /* ContactFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -177,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				1609690624391FC200F5E91E /* AddContactInformationViewController.swift */,
+				16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */,
 			);
 			path = AddContactInformation;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				167CBF302438A23B009B2E70 /* ButtonWithImage.swift */,
 				160968FF2439184B00F5E91E /* CategoryGroupView.swift */,
 				163ABAF22439AFAA006B47C5 /* StyledTextField.swift */,
+				16CD99F22439F26A00072D14 /* ContactFieldView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -505,11 +511,13 @@
 				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */,
 				05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */,
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
+				16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
 				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,
 				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
 				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
+				16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */,
 				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
