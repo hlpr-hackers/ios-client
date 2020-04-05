@@ -26,7 +26,7 @@
                                     </imageView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Mr. Awesome" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ytD-UJ-PIX" userLabel="User Name View">
                                         <rect key="frame" x="0.0" y="379" width="414" height="47"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="47" id="NfY-vD-1lw"/>
                                         </constraints>
@@ -36,7 +36,7 @@
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="An awesome task" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9cV-bc-Acn" userLabel="Task Description View">
                                         <rect key="frame" x="0.0" y="428" width="414" height="54"/>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="54" id="V74-8B-RAg"/>
                                         </constraints>
@@ -44,19 +44,27 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-pf-zjB">
-                                        <rect key="frame" x="0.0" y="484" width="414" height="302"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-pf-zjB">
+                                        <rect key="frame" x="0.0" y="484" width="414" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="lCw-9l-onC"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <state key="normal" title="Call Now" image="phone" catalog="system">
                                             <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-f0-hn0">
-                                        <rect key="frame" x="0.0" y="788" width="414" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-f0-hn0">
+                                        <rect key="frame" x="0.0" y="536" width="414" height="282"/>
                                         <state key="normal" title="More Tasks"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="b8H-pf-zjB" firstAttribute="top" secondItem="9cV-bc-Acn" secondAttribute="bottom" constant="2" id="DH8-dH-4Zb"/>
+                                    <constraint firstItem="ugu-f0-hn0" firstAttribute="top" secondItem="b8H-pf-zjB" secondAttribute="bottom" constant="2" id="FWI-Re-aQR"/>
+                                    <constraint firstItem="ytD-UJ-PIX" firstAttribute="top" secondItem="ong-aD-UYx" secondAttribute="bottom" constant="2" id="Px9-qE-L3F"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="ahG-IP-5J4"/>
                             </stackView>
                         </subviews>
@@ -73,7 +81,7 @@
                         <outlet property="callNowButton" destination="b8H-pf-zjB" id="mBH-pB-Yd5"/>
                         <outlet property="moreTasksButton" destination="ugu-f0-hn0" id="bxX-Sr-Nsl"/>
                         <outlet property="view" destination="ugu-f0-hn0" id="dby-Dt-QMz"/>
-                        <segue destination="eQM-mA-mav" kind="show" id="zvd-OZ-DWn"/>
+                        <segue destination="eQM-mA-mav" kind="show" identifier="navigateToSelectTask" id="zvd-OZ-DWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igh-ch-fDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

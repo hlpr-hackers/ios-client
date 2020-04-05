@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class RecommendedHelpSeekerViewController: UIViewController {
+class RecommendedHelpSeekerViewController: StyledViewController {
     
     @IBOutlet weak var callNowButton: UIButton?
     @IBOutlet weak var moreTasksButton: UIButton?
-    
+    var segueData: RecommendedTaskSegueData?
     private let callUtility = Utilities.calling()
     
     override func viewDidLoad() {
@@ -27,16 +27,20 @@ class RecommendedHelpSeekerViewController: UIViewController {
             action: #selector(onCallNowButtonPressed),
             for: .touchUpInside
         )
+        moreTasksButton?.addTarget(
+            self,
+            action: #selector(onMoreTasksButtonPressed),
+            for: .touchUpInside
+        )
     }
     
     @objc private func onCallNowButtonPressed() {
-        callUtility.call(phoneNumber: "123456789")
+        callUtility.call(phoneNumber: "0734637005")
     }
     
-    private func createSegue(
-        for button: UIButton,
-        segueType: NavigationConstants.Segues.RecommendedHelpSeekerViewController
-    ) {
-        performSegue(withIdentifier: segueType.rawValue, sender: self)
+    @objc private func onMoreTasksButtonPressed() {
+        performSegue(
+            withIdentifier: NavigationConstants.Segues.RecommendedHelpSeekerViewController.navigateToSelectTask.rawValue,
+            sender: self)
     }
 }
