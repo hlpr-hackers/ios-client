@@ -80,7 +80,6 @@
                     <connections>
                         <outlet property="callNowButton" destination="b8H-pf-zjB" id="mBH-pB-Yd5"/>
                         <outlet property="moreTasksButton" destination="ugu-f0-hn0" id="bxX-Sr-Nsl"/>
-                        <outlet property="view" destination="ugu-f0-hn0" id="dby-Dt-QMz"/>
                         <segue destination="eQM-mA-mav" kind="show" identifier="navigateToSelectTask" id="zvd-OZ-DWn"/>
                     </connections>
                 </viewController>

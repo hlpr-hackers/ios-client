@@ -15,7 +15,8 @@ struct UIConstants {
     struct color {
         static let backgroundColor = UIColor(red: 0.9, green: 0.9, blue: 0.9, alpha: 1.0)
         static let itemBackgroundColors: [UIColor] = [UIColor.white]
-
+        static let tintColor = UIColor(red: 0.0/255.0, green: 165.0/255.0, blue: 227.0/255.0, alpha: 1.0)
+        static let disabled = UIConstants.color.tintColor.withAlphaComponent(0.4)
 /// Possible scale of colors
         
 //        static let itemBackgroundColors: [UIColor] = [

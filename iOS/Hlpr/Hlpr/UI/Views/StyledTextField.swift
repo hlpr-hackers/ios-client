@@ -39,6 +39,14 @@ class StyledTextField: UITextField {
         underline?.frame = CGRect(x: 0, y: self.frame.size.height - width, width:  self.frame.size.width - 10, height: self.frame.size.height)
     }
     
+    func setShowingError(_ showingError: Bool) {
+        if showingError {
+            underline?.borderColor = UIConstants.color.contactField.errorUnderline
+        } else {
+            underline?.borderColor = UIConstants.color.contactField.underline
+        }
+    }
+    
     @objc func didStartEditing() {
         underline?.borderColor = UIConstants.color.contactField.selectedUnderline
     }
