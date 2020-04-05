@@ -18,6 +18,9 @@
 		0566769E2439E0E500C12DB6 /* HelpSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566769B2439E0E500C12DB6 /* HelpSeeker.swift */; };
 		0566769F2439E0E500C12DB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566769C2439E0E500C12DB6 /* Task.swift */; };
 		056676A12439E10F00C12DB6 /* SelectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676A02439E10F00C12DB6 /* SelectTaskViewModel.swift */; };
+		056676A52439E9A100C12DB6 /* TasksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676A42439E9A100C12DB6 /* TasksRepository.swift */; };
+		056676A72439EB8B00C12DB6 /* RespositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676A62439EB8B00C12DB6 /* RespositoryFactory.swift */; };
+		056676A92439ECCA00C12DB6 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676A82439ECCA00C12DB6 /* ViewModelFactory.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
@@ -76,6 +79,9 @@
 		0566769B2439E0E500C12DB6 /* HelpSeeker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpSeeker.swift; sourceTree = "<group>"; };
 		0566769C2439E0E500C12DB6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		056676A02439E10F00C12DB6 /* SelectTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskViewModel.swift; sourceTree = "<group>"; };
+		056676A42439E9A100C12DB6 /* TasksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TasksRepository.swift; sourceTree = "<group>"; };
+		056676A62439EB8B00C12DB6 /* RespositoryFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RespositoryFactory.swift; sourceTree = "<group>"; };
+		056676A82439ECCA00C12DB6 /* ViewModelFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
@@ -166,6 +172,23 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		056676A22439E95E00C12DB6 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				056676A32439E96D00C12DB6 /* Repositories */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		056676A32439E96D00C12DB6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				056676A42439E9A100C12DB6 /* TasksRepository.swift */,
+				056676A62439EB8B00C12DB6 /* RespositoryFactory.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		160968FA2439180400F5E91E /* Helper protocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +244,7 @@
 		167CBEF22438A022009B2E70 /* Hlpr */ = {
 			isa = PBXGroup;
 			children = (
+				056676A22439E95E00C12DB6 /* DataAccess */,
 				16096903243919EC00F5E91E /* Styling */,
 				167CBF3C2438B4A0009B2E70 /* Domain */,
 				056676882439471000C12DB6 /* Utils */,
@@ -260,6 +284,7 @@
 				167CBF262438A04F009B2E70 /* Start */,
 				167CBF252438A04B009B2E70 /* OfferHelp */,
 				167CBF242438A03D009B2E70 /* GetHelp */,
+				056676A82439ECCA00C12DB6 /* ViewModelFactory.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -505,6 +530,7 @@
 			files = (
 				163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */,
 				1609690E243920E000F5E91E /* Contact.swift in Sources */,
+				056676A72439EB8B00C12DB6 /* RespositoryFactory.swift in Sources */,
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
 				056676A12439E10F00C12DB6 /* SelectTaskViewModel.swift in Sources */,
 				1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */,
@@ -512,6 +538,7 @@
 				0566769E2439E0E500C12DB6 /* HelpSeeker.swift in Sources */,
 				0566769D2439E0E500C12DB6 /* AssignableTask.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
+				056676A52439E9A100C12DB6 /* TasksRepository.swift in Sources */,
 				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
 				05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */,
 				167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */,
@@ -520,6 +547,7 @@
 				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */,
 				05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */,
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
+				056676A92439ECCA00C12DB6 /* ViewModelFactory.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
 				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,

@@ -5,7 +5,7 @@
       location = "group:Swift Packages"
       name = "Swift Packages">
       <FileRef
-         location = "group:../LocalSwiftPackages/APIClient">
+         location = "group:LocalSwiftPackages/APIClient">
       </FileRef>
    </Group>
    <FileRef

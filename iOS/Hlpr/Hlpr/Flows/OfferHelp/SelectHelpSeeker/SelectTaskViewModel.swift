@@ -9,13 +9,13 @@
 import Foundation
 
 class SelectTaskViewModel {
-    private var assignableTasks: [AssignableTask] = [
-        
-    ]
+    private let repository: TasksRepository
     
+    init(repository: TasksRepository) {
+        self.repository = repository
+    }
     
-    
-    func loadAssignableTasks(completion: ([AssignableTask]) -> Void) {
-        
+    func loadAssignableTasks(completion: @escaping ([AssignableTask]) -> Void) {
+        repository.retrieveAssignableTasks(completion: completion)
     }
 }
