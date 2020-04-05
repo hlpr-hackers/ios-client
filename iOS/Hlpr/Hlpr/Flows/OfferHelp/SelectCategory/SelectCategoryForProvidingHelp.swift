@@ -24,7 +24,7 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let title = "I need help to"
+        let title = "I can help to"
         let styler = SelectCategoryStyler(view: view)
         styler.style(with: categories, title: title)
         

@@ -23,7 +23,7 @@ class SelectCategoryForGettingHelpViewController: StyledViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let title = "I can help to"
+        let title = "I need help to"
         let styler = SelectCategoryStyler(view: view)
         styler.style(with: categories, title: title)
         
@@ -33,6 +33,9 @@ class SelectCategoryForGettingHelpViewController: StyledViewController {
 
 extension SelectCategoryForGettingHelpViewController: CategoryViewDelegate {
     func didSelectItem(forCategory category: Category) {
-        /// TODO: Navigate somewhere
+        let requestHelp = RequestHelp(category: category,
+                                      contactInformation: nil)
+        let viewController = AddContactInformationViewController(requestHelp: requestHelp)
+        navigationController?.show(viewController, sender: self)
     }
 }

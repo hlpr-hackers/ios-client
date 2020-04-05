@@ -45,8 +45,8 @@
                     <connections>
                         <outlet property="getHelpButton" destination="wAZ-6n-m5s" id="u94-zI-vnu"/>
                         <outlet property="offerHelpButton" destination="DYn-tW-7hQ" id="TAV-zR-0rw"/>
-                        <segue destination="gg0-9a-dIA" kind="show" identifier="navigateToOfferHelp" id="zhu-M9-Qnc"/>
-                        <segue destination="VUL-jc-wBS" kind="show" identifier="navigateToGetHelp" id="pZ3-FI-Z95"/>
+                        <segue destination="gg0-9a-dIA" kind="show" identifier="navigateToGetHelp" id="zhu-M9-Qnc"/>
+                        <segue destination="VUL-jc-wBS" kind="show" identifier="navigateToOfferHelp" id="pZ3-FI-Z95"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
