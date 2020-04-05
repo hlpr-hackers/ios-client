@@ -9,6 +9,6 @@
 import Foundation
 
 struct RequestHelp {
-    let category: Category
-    let contactInformation: Contact?
+    var category: Category
+    var contactInformation: Contact?
 }

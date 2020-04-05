@@ -22,6 +22,7 @@
 		1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690624391FC200F5E91E /* AddContactInformationViewController.swift */; };
 		1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690B243920BF00F5E91E /* RequestHelp.swift */; };
 		1609690E243920E000F5E91E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690D243920E000F5E91E /* Contact.swift */; };
+		161F309A243A12570081B902 /* UIView+GradientStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 161F3099243A12570081B902 /* UIView+GradientStyling.swift */; };
 		163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ABAF22439AFAA006B47C5 /* StyledTextField.swift */; };
 		163ABAF62439C42D006B47C5 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 163ABAF52439C42D006B47C5 /* PhoneNumberKit */; };
 		167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF32438A022009B2E70 /* AppDelegate.swift */; };
@@ -43,6 +44,10 @@
 		16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */; };
 		16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */; };
 		16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F22439F26A00072D14 /* ContactFieldView.swift */; };
+		16CD99F62439F2FC00072D14 /* ConfirmationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F52439F2FC00072D14 /* ConfirmationViewController.swift */; };
+		16CD99F82439F30B00072D14 /* Confirmation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99F72439F30B00072D14 /* Confirmation.storyboard */; };
+		16CD99FA2439F4C000072D14 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99F92439F4C000072D14 /* Images.xcassets */; };
+		16CD99FC243A020B00072D14 /* RequestHelpRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99FB243A020B00072D14 /* RequestHelpRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +83,7 @@
 		1609690624391FC200F5E91E /* AddContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewController.swift; sourceTree = "<group>"; };
 		1609690B243920BF00F5E91E /* RequestHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelp.swift; sourceTree = "<group>"; };
 		1609690D243920E000F5E91E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		161F3099243A12570081B902 /* UIView+GradientStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+GradientStyling.swift"; sourceTree = "<group>"; };
 		163ABAF22439AFAA006B47C5 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		167CBEF02438A022009B2E70 /* Hlpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167CBEF32438A022009B2E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,10 @@
 		16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
 		16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewConfigurator.swift; sourceTree = "<group>"; };
 		16CD99F22439F26A00072D14 /* ContactFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFieldView.swift; sourceTree = "<group>"; };
+		16CD99F52439F2FC00072D14 /* ConfirmationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationViewController.swift; sourceTree = "<group>"; };
+		16CD99F72439F30B00072D14 /* Confirmation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Confirmation.storyboard; sourceTree = "<group>"; };
+		16CD99F92439F4C000072D14 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		16CD99FB243A020B00072D14 /* RequestHelpRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelpRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				160969012439189800F5E91E /* SelectCategoryStyler.swift */,
+				161F3099243A12570081B902 /* UIView+GradientStyling.swift */,
 			);
 			path = Styling;
 			sourceTree = "<group>";
@@ -189,6 +200,7 @@
 		1609690A243920B400F5E91E /* Requests */ = {
 			isa = PBXGroup;
 			children = (
+				16CD99FB243A020B00072D14 /* RequestHelpRepository.swift */,
 				1609690B243920BF00F5E91E /* RequestHelp.swift */,
 			);
 			path = Requests;
@@ -265,6 +277,7 @@
 			children = (
 				167CBF282438A137009B2E70 /* SelectCategory */,
 				1609690424391F8400F5E91E /* AddContactInformation */,
+				16CD99F42439F2D700072D14 /* Confirmation */,
 			);
 			path = GetHelp;
 			sourceTree = "<group>";
@@ -351,9 +364,19 @@
 		16CD99EB2439DDEA00072D14 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				16CD99F92439F4C000072D14 /* Images.xcassets */,
 				16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		16CD99F42439F2D700072D14 /* Confirmation */ = {
+			isa = PBXGroup;
+			children = (
+				16CD99F52439F2FC00072D14 /* ConfirmationViewController.swift */,
+				16CD99F72439F30B00072D14 /* Confirmation.storyboard */,
+			);
+			path = Confirmation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,6 +489,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16CD99FA2439F4C000072D14 /* Images.xcassets in Resources */,
 				167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */,
 				167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */,
 				167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */,
@@ -473,6 +497,7 @@
 				05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */,
 				167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */,
 				05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */,
+				16CD99F82439F30B00072D14 /* Confirmation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +525,7 @@
 				163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */,
 				1609690E243920E000F5E91E /* Contact.swift in Sources */,
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				16CD99F62439F2FC00072D14 /* ConfirmationViewController.swift in Sources */,
 				1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */,
 				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
@@ -520,6 +546,8 @@
 				16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */,
 				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
+				16CD99FC243A020B00072D14 /* RequestHelpRepository.swift in Sources */,
+				161F309A243A12570081B902 /* UIView+GradientStyling.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
 				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
 				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,

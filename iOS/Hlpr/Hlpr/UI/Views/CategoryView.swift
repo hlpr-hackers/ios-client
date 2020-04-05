@@ -37,9 +37,7 @@ class CategoryView: ButtonWithImage {
         super.init(frame: .zero)
         
         configure(for: category)
-        let colorId = Int(category.id)!%UIConstants.color.itemBackgroundColors.count /// TODO: Remove force unwrap
-        self.backgroundColor = UIConstants.color.itemBackgroundColors[colorId]
-        
+                
         setUpShadow()
         
         addTarget(self, action: #selector(didPressButton), for: .touchUpInside)
@@ -57,6 +55,10 @@ class CategoryView: ButtonWithImage {
     override func layoutSubviews() {
         super.layoutSubviews()
         updateShadow()
+        
+        let colorId = Int(category.id)!%UIConstants.color.itemGradientColors.count /// TODO: Remove force unwrap
+        //        self.backgroundColor = UIConstants.color.itemBackgroundColors[colorId]
+        applyGradient(colours: UIConstants.color.itemGradientColors[colorId])
     }
     
     /// Targets

@@ -21,15 +21,17 @@ class ButtonWithImage: UIButton, Shadowed {
     }
     
     func setUpStyle() {
-        let colorId = Int.random(in: 0..<UIConstants.color.itemBackgroundColors.count)
-        self.backgroundColor = UIConstants.color.itemBackgroundColors[colorId]
         setUpShadow()
         
         layer.cornerRadius = UIConstants.button.radius
         
         setTitleColor(UIConstants.color.button, for: .normal)
         setTitleColor(UIConstants.color.buttonHighlighted, for: .highlighted)
-        
+        titleLabel?.font = UIFont.systemFont(ofSize: 18.0)
+        titleLabel?.shadowOffset = CGSize(width: 0.3, height: 0.3)
+        titleLabel?.layer.shadowRadius = 2.0
+        setTitleShadowColor(UIColor.darkGray, for: .normal)
+                
         NSLayoutConstraint.activate([
             heightAnchor.constraint(greaterThanOrEqualToConstant: UIConstants.button.minimumHeight)
         ])

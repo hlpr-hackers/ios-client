@@ -43,7 +43,7 @@ class AddContactInformationViewController: StyledViewController {
         nextButton = viewConfigurator.nextButton
         nextButton?.addTarget(self, action: #selector(navigateToNextScreen), for: .touchUpInside)
         
-        viewConfigurator.nameField?.becomeFirstResponder()
+        nameField?.becomeFirstResponder()
     }
     
     func updateNextButton() {
@@ -57,8 +57,20 @@ class AddContactInformationViewController: StyledViewController {
         return validateField(nameField) && validateField(phoneField)
     }
     
+    var requestHelpRepository: RequestHelpRepository? = {
+        return (UIApplication.shared.delegate as? AppDelegate)?.requestHelpRepository
+    }()
+    
     @objc func navigateToNextScreen() {
-        // TODO: Navigate
+        let contact = Contact(name: nameField?.textFieldText ?? "",
+                              phone: phoneField?.textFieldText ?? "")
+        requestHelp.contactInformation = contact
+        requestHelpRepository?.requestHelp(requestHelp, completion: { _ in
+            let storyboard = UIStoryboard(name: "Confirmation", bundle: nil)
+            if let viewController = storyboard.instantiateInitialViewController() {
+                self.navigationController?.show(viewController, sender: self)
+            }
+        })
     }
 }
 

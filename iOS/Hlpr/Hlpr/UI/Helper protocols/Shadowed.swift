@@ -16,7 +16,7 @@ protocol Shadowed {
 extension Shadowed where Self: UIView {
     func setUpShadow() {
         self.layer.shadowOffset = .zero
-        self.layer.shadowOpacity = 0.3
+        self.layer.shadowOpacity = 0.1
     }
     
     func updateShadow() {

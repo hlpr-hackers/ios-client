@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RgZ-A8-9UI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RgZ-A8-9UI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,11 +32,47 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZo-yi-4DJ">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="n4B-FP-Ptq">
+                                        <rect key="frame" x="30" y="50" width="354" height="142.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your requested help" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3F-a0-2YB">
+                                                <rect key="frame" x="0.0" y="0.0" width="354" height="33.5"/>
+                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aG-7U-aFr" customClass="ButtonWithImage" customModule="Hlpr" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="72.5" width="354" height="70"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="70" id="ov4-vf-5CE"/>
+                                                </constraints>
+                                                <state key="normal" title="Something">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="n4B-FP-Ptq" firstAttribute="top" secondItem="tZo-yi-4DJ" secondAttribute="top" constant="50" id="DIi-68-W4n"/>
+                                    <constraint firstItem="n4B-FP-Ptq" firstAttribute="leading" secondItem="tZo-yi-4DJ" secondAttribute="leading" constant="30" id="Kuo-Ig-Vmi"/>
+                                    <constraint firstAttribute="trailing" secondItem="n4B-FP-Ptq" secondAttribute="trailing" constant="30" id="Wwe-h8-4TY"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="n4B-FP-Ptq" secondAttribute="bottom" id="wSq-kk-4Fc"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tZo-yi-4DJ" secondAttribute="trailing" id="3HY-Ff-c3w"/>
                             <constraint firstItem="5qV-qM-VUZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="4SC-8w-UHA"/>
+                            <constraint firstItem="tZo-yi-4DJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="C9n-RH-wCJ"/>
+                            <constraint firstItem="tZo-yi-4DJ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Ibc-Nc-p8p"/>
                             <constraint firstItem="5qV-qM-VUZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UY2-CV-S6h"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="tZo-yi-4DJ" secondAttribute="bottom" id="nAo-5b-B8j"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5qV-qM-VUZ" secondAttribute="trailing" constant="40" id="uyx-qh-c6b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -44,7 +80,11 @@
                     <navigationItem key="navigationItem" id="GFp-9q-s4D"/>
                     <connections>
                         <outlet property="getHelpButton" destination="wAZ-6n-m5s" id="u94-zI-vnu"/>
+                        <outlet property="helpRequestedView" destination="tZo-yi-4DJ" id="5T2-CF-YPJ"/>
                         <outlet property="offerHelpButton" destination="DYn-tW-7hQ" id="TAV-zR-0rw"/>
+                        <outlet property="requestHelpView" destination="5qV-qM-VUZ" id="AUn-rR-Z5u"/>
+                        <outlet property="requestedHelpItem" destination="3aG-7U-aFr" id="UTJ-MN-VTS"/>
+                        <outlet property="requestedHelpTitle" destination="A3F-a0-2YB" id="qP0-Zd-pQt"/>
                         <segue destination="gg0-9a-dIA" kind="show" identifier="navigateToGetHelp" id="zhu-M9-Qnc"/>
                         <segue destination="VUL-jc-wBS" kind="show" identifier="navigateToOfferHelp" id="pZ3-FI-Z95"/>
                     </connections>

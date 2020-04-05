@@ -115,7 +115,7 @@ class AddContactInformationViewConfigurator {
     @discardableResult
     private func setUpTitleLabel(title: String) -> UILabel {
         let label = UILabel()
-        label.font = UIFont.preferredFont(forTextStyle: .title1)
+        label.font = UIConstants.font.title
         label.text = title
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
