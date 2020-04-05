@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import UIKit
 
 class SelectTaskViewController: StyledViewController {
+    private let viewModel = RepositoryFactory.createTasksRepository()
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }

@@ -14,6 +14,14 @@
 		0566768B2439471000C12DB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676892439471000C12DB6 /* Utilities.swift */; };
 		0566768C2439471000C12DB6 /* CallUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768A2439471000C12DB6 /* CallUtility.swift */; };
 		05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */; };
+		056676B3243A132500C12DB6 /* ViewModelFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B2243A132500C12DB6 /* ViewModelFactory.swift */; };
+		056676B5243A138000C12DB6 /* SelectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B4243A138000C12DB6 /* SelectTaskViewModel.swift */; };
+		056676B9243A13AC00C12DB6 /* HelpSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B6243A13AC00C12DB6 /* HelpSeeker.swift */; };
+		056676BA243A13AC00C12DB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B7243A13AC00C12DB6 /* Task.swift */; };
+		056676BB243A13AC00C12DB6 /* AssignableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B8243A13AC00C12DB6 /* AssignableTask.swift */; };
+		056676CC243A144600C12DB6 /* RespositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CA243A144600C12DB6 /* RespositoryFactory.swift */; };
+		056676CD243A144600C12DB6 /* TasksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CB243A144600C12DB6 /* TasksRepository.swift */; };
+		056676CF243A16F300C12DB6 /* RecommmendedTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
@@ -70,6 +78,14 @@
 		056676892439471000C12DB6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0566768A2439471000C12DB6 /* CallUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUtility.swift; sourceTree = "<group>"; };
 		0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedTaskSegueData.swift; sourceTree = "<group>"; };
+		056676B2243A132500C12DB6 /* ViewModelFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelFactory.swift; sourceTree = "<group>"; };
+		056676B4243A138000C12DB6 /* SelectTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskViewModel.swift; sourceTree = "<group>"; };
+		056676B6243A13AC00C12DB6 /* HelpSeeker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpSeeker.swift; sourceTree = "<group>"; };
+		056676B7243A13AC00C12DB6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		056676B8243A13AC00C12DB6 /* AssignableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignableTask.swift; sourceTree = "<group>"; };
+		056676CA243A144600C12DB6 /* RespositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryFactory.swift; sourceTree = "<group>"; };
+		056676CB243A144600C12DB6 /* TasksRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksRepository.swift; sourceTree = "<group>"; };
+		056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommmendedTaskViewModel.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
@@ -135,10 +151,12 @@
 		0566767F243946C400C12DB6 /* SelectHelpSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				056676B4243A138000C12DB6 /* SelectTaskViewModel.swift */,
 				05667680243946C400C12DB6 /* SelectTask.storyboard */,
 				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
 				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
 				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
+				056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */,
 			);
 			path = SelectHelpSeeker;
 			sourceTree = "<group>";
@@ -159,6 +177,23 @@
 				0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		056676C8243A144600C12DB6 /* DataAccess */ = {
+			isa = PBXGroup;
+			children = (
+				056676C9243A144600C12DB6 /* Repositories */,
+			);
+			path = DataAccess;
+			sourceTree = "<group>";
+		};
+		056676C9243A144600C12DB6 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				056676CA243A144600C12DB6 /* RespositoryFactory.swift */,
+				056676CB243A144600C12DB6 /* TasksRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		160968FA2439180400F5E91E /* Helper protocols */ = {
@@ -217,6 +252,7 @@
 		167CBEF22438A022009B2E70 /* Hlpr */ = {
 			isa = PBXGroup;
 			children = (
+				056676C8243A144600C12DB6 /* DataAccess */,
 				16096903243919EC00F5E91E /* Styling */,
 				167CBF3C2438B4A0009B2E70 /* Domain */,
 				056676882439471000C12DB6 /* Utils */,
@@ -252,6 +288,7 @@
 		167CBF232438A036009B2E70 /* Flows */ = {
 			isa = PBXGroup;
 			children = (
+				056676B2243A132500C12DB6 /* ViewModelFactory.swift */,
 				167CBF342438A5A5009B2E70 /* NavigationConstants.swift */,
 				167CBF262438A04F009B2E70 /* Start */,
 				167CBF252438A04B009B2E70 /* OfferHelp */,
@@ -344,6 +381,9 @@
 			children = (
 				167CBF3E2438B4B2009B2E70 /* Category.swift */,
 				1609690D243920E000F5E91E /* Contact.swift */,
+				056676B8243A13AC00C12DB6 /* AssignableTask.swift */,
+				056676B6243A13AC00C12DB6 /* HelpSeeker.swift */,
+				056676B7243A13AC00C12DB6 /* Task.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -500,9 +540,11 @@
 				163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */,
 				1609690E243920E000F5E91E /* Contact.swift in Sources */,
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				056676B5243A138000C12DB6 /* SelectTaskViewModel.swift in Sources */,
 				1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */,
 				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
+				056676B3243A132500C12DB6 /* ViewModelFactory.swift in Sources */,
 				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
 				05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */,
 				167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */,
@@ -510,18 +552,24 @@
 				0566768B2439471000C12DB6 /* Utilities.swift in Sources */,
 				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */,
 				05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */,
+				056676CD243A144600C12DB6 /* TasksRepository.swift in Sources */,
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
 				16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
 				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,
+				056676CF243A16F300C12DB6 /* RecommmendedTaskViewModel.swift in Sources */,
 				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
 				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
+				056676BA243A13AC00C12DB6 /* Task.swift in Sources */,
 				16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */,
+				056676BB243A13AC00C12DB6 /* AssignableTask.swift in Sources */,
 				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
+				056676B9243A13AC00C12DB6 /* HelpSeeker.swift in Sources */,
 				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
+				056676CC243A144600C12DB6 /* RespositoryFactory.swift in Sources */,
 				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
