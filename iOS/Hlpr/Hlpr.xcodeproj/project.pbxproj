@@ -1,0 +1,877 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05667680243946C400C12DB6 /* SelectTask.storyboard */; };
+		05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05667681243946C400C12DB6 /* SelectTaskViewController.swift */; };
+		05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */; };
+		05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */; };
+		0566768B2439471000C12DB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676892439471000C12DB6 /* Utilities.swift */; };
+		0566768C2439471000C12DB6 /* CallUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768A2439471000C12DB6 /* CallUtility.swift */; };
+		05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */; };
+		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
+		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
+		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
+		160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FF2439184B00F5E91E /* CategoryGroupView.swift */; };
+		160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160969012439189800F5E91E /* SelectCategoryStyler.swift */; };
+		1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690624391FC200F5E91E /* AddContactInformationViewController.swift */; };
+		1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690B243920BF00F5E91E /* RequestHelp.swift */; };
+		1609690E243920E000F5E91E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690D243920E000F5E91E /* Contact.swift */; };
+		163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ABAF22439AFAA006B47C5 /* StyledTextField.swift */; };
+		163ABAF62439C42D006B47C5 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 163ABAF52439C42D006B47C5 /* PhoneNumberKit */; };
+		167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF32438A022009B2E70 /* AppDelegate.swift */; };
+		167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF52438A022009B2E70 /* SceneDelegate.swift */; };
+		167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF72438A022009B2E70 /* StartViewController.swift */; };
+		167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEF92438A022009B2E70 /* StartViewController.storyboard */; };
+		167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */; };
+		167CBF0B2438A023009B2E70 /* HlprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF0A2438A023009B2E70 /* HlprTests.swift */; };
+		167CBF162438A023009B2E70 /* HlprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF152438A023009B2E70 /* HlprUITests.swift */; };
+		167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */; };
+		167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */; };
+		167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF302438A23B009B2E70 /* ButtonWithImage.swift */; };
+		167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF322438A34A009B2E70 /* UIConstants.swift */; };
+		167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF342438A5A5009B2E70 /* NavigationConstants.swift */; };
+		167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBF362438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard */; };
+		167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */; };
+		167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF3E2438B4B2009B2E70 /* Category.swift */; };
+		167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF402438B5ED009B2E70 /* CategoryView.swift */; };
+		16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */; };
+		16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */; };
+		16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16CD99F22439F26A00072D14 /* ContactFieldView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		167CBF072438A023009B2E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 167CBEE82438A022009B2E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 167CBEEF2438A022009B2E70;
+			remoteInfo = Hlpr;
+		};
+		167CBF122438A023009B2E70 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 167CBEE82438A022009B2E70 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 167CBEEF2438A022009B2E70;
+			remoteInfo = Hlpr;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05667680243946C400C12DB6 /* SelectTask.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectTask.storyboard; sourceTree = "<group>"; };
+		05667681243946C400C12DB6 /* SelectTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskViewController.swift; sourceTree = "<group>"; };
+		05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RecommendedHelpSeeker.storyboard; sourceTree = "<group>"; };
+		05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedHelpSeekerViewController.swift; sourceTree = "<group>"; };
+		056676892439471000C12DB6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		0566768A2439471000C12DB6 /* CallUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUtility.swift; sourceTree = "<group>"; };
+		0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedTaskSegueData.swift; sourceTree = "<group>"; };
+		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
+		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
+		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
+		160968FF2439184B00F5E91E /* CategoryGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGroupView.swift; sourceTree = "<group>"; };
+		160969012439189800F5E91E /* SelectCategoryStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryStyler.swift; sourceTree = "<group>"; };
+		1609690624391FC200F5E91E /* AddContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewController.swift; sourceTree = "<group>"; };
+		1609690B243920BF00F5E91E /* RequestHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelp.swift; sourceTree = "<group>"; };
+		1609690D243920E000F5E91E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		163ABAF22439AFAA006B47C5 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
+		167CBEF02438A022009B2E70 /* Hlpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		167CBEF32438A022009B2E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		167CBEF52438A022009B2E70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		167CBEF72438A022009B2E70 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		167CBEFA2438A022009B2E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartViewController.storyboard; sourceTree = "<group>"; };
+		167CBEFF2438A023009B2E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		167CBF012438A023009B2E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167CBF062438A023009B2E70 /* HlprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HlprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		167CBF0A2438A023009B2E70 /* HlprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlprTests.swift; sourceTree = "<group>"; };
+		167CBF0C2438A023009B2E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167CBF112438A023009B2E70 /* HlprUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HlprUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		167CBF152438A023009B2E70 /* HlprUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HlprUITests.swift; sourceTree = "<group>"; };
+		167CBF172438A023009B2E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryForProvidingHelpViewController.swift; sourceTree = "<group>"; };
+		167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectCategoryForProvidingHelp.storyboard; sourceTree = "<group>"; };
+		167CBF302438A23B009B2E70 /* ButtonWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonWithImage.swift; sourceTree = "<group>"; };
+		167CBF322438A34A009B2E70 /* UIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIConstants.swift; sourceTree = "<group>"; };
+		167CBF342438A5A5009B2E70 /* NavigationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationConstants.swift; sourceTree = "<group>"; };
+		167CBF362438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SelectCategoryForGettingHelp.storyboard; sourceTree = "<group>"; };
+		167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryForGettingHelpViewController.swift; sourceTree = "<group>"; };
+		167CBF3E2438B4B2009B2E70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		167CBF402438B5ED009B2E70 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewConfigurator.swift; sourceTree = "<group>"; };
+		16CD99F22439F26A00072D14 /* ContactFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactFieldView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		167CBEED2438A022009B2E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163ABAF62439C42D006B47C5 /* PhoneNumberKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF032438A023009B2E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF0E2438A023009B2E70 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0566767F243946C400C12DB6 /* SelectHelpSeeker */ = {
+			isa = PBXGroup;
+			children = (
+				05667680243946C400C12DB6 /* SelectTask.storyboard */,
+				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
+				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
+				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
+			);
+			path = SelectHelpSeeker;
+			sourceTree = "<group>";
+		};
+		056676882439471000C12DB6 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				056676892439471000C12DB6 /* Utilities.swift */,
+				0566768A2439471000C12DB6 /* CallUtility.swift */,
+			);
+			name = Utils;
+			path = Hlpr/Utils;
+			sourceTree = SOURCE_ROOT;
+		};
+		0566768E2439518C00C12DB6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		160968FA2439180400F5E91E /* Helper protocols */ = {
+			isa = PBXGroup;
+			children = (
+				160968FB2439181100F5E91E /* Shadowed.swift */,
+			);
+			path = "Helper protocols";
+			sourceTree = "<group>";
+		};
+		16096903243919EC00F5E91E /* Styling */ = {
+			isa = PBXGroup;
+			children = (
+				160969012439189800F5E91E /* SelectCategoryStyler.swift */,
+			);
+			path = Styling;
+			sourceTree = "<group>";
+		};
+		1609690424391F8400F5E91E /* AddContactInformation */ = {
+			isa = PBXGroup;
+			children = (
+				1609690624391FC200F5E91E /* AddContactInformationViewController.swift */,
+				16CD99F02439F24400072D14 /* AddContactInformationViewConfigurator.swift */,
+			);
+			path = AddContactInformation;
+			sourceTree = "<group>";
+		};
+		1609690A243920B400F5E91E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1609690B243920BF00F5E91E /* RequestHelp.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		167CBEE72438A022009B2E70 = {
+			isa = PBXGroup;
+			children = (
+				167CBEF22438A022009B2E70 /* Hlpr */,
+				167CBF092438A023009B2E70 /* HlprTests */,
+				167CBF142438A023009B2E70 /* HlprUITests */,
+				167CBEF12438A022009B2E70 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		167CBEF12438A022009B2E70 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				167CBEF02438A022009B2E70 /* Hlpr.app */,
+				167CBF062438A023009B2E70 /* HlprTests.xctest */,
+				167CBF112438A023009B2E70 /* HlprUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		167CBEF22438A022009B2E70 /* Hlpr */ = {
+			isa = PBXGroup;
+			children = (
+				16096903243919EC00F5E91E /* Styling */,
+				167CBF3C2438B4A0009B2E70 /* Domain */,
+				056676882439471000C12DB6 /* Utils */,
+				167CBF2E2438A225009B2E70 /* UI */,
+				167CBEF32438A022009B2E70 /* AppDelegate.swift */,
+				167CBEF52438A022009B2E70 /* SceneDelegate.swift */,
+				167CBF232438A036009B2E70 /* Flows */,
+				167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */,
+				16CD99EB2439DDEA00072D14 /* Resources */,
+				167CBF012438A023009B2E70 /* Info.plist */,
+			);
+			path = Hlpr;
+			sourceTree = "<group>";
+		};
+		167CBF092438A023009B2E70 /* HlprTests */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF0A2438A023009B2E70 /* HlprTests.swift */,
+				167CBF0C2438A023009B2E70 /* Info.plist */,
+			);
+			path = HlprTests;
+			sourceTree = "<group>";
+		};
+		167CBF142438A023009B2E70 /* HlprUITests */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF152438A023009B2E70 /* HlprUITests.swift */,
+				167CBF172438A023009B2E70 /* Info.plist */,
+			);
+			path = HlprUITests;
+			sourceTree = "<group>";
+		};
+		167CBF232438A036009B2E70 /* Flows */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF342438A5A5009B2E70 /* NavigationConstants.swift */,
+				167CBF262438A04F009B2E70 /* Start */,
+				167CBF252438A04B009B2E70 /* OfferHelp */,
+				167CBF242438A03D009B2E70 /* GetHelp */,
+			);
+			path = Flows;
+			sourceTree = "<group>";
+		};
+		167CBF242438A03D009B2E70 /* GetHelp */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF282438A137009B2E70 /* SelectCategory */,
+				1609690424391F8400F5E91E /* AddContactInformation */,
+			);
+			path = GetHelp;
+			sourceTree = "<group>";
+		};
+		167CBF252438A04B009B2E70 /* OfferHelp */ = {
+			isa = PBXGroup;
+			children = (
+				0566768E2439518C00C12DB6 /* Models */,
+				0566767F243946C400C12DB6 /* SelectHelpSeeker */,
+				167CBF272438A126009B2E70 /* SelectCategory */,
+			);
+			path = OfferHelp;
+			sourceTree = "<group>";
+		};
+		167CBF262438A04F009B2E70 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				167CBEF72438A022009B2E70 /* StartViewController.swift */,
+				167CBEF92438A022009B2E70 /* StartViewController.storyboard */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		167CBF272438A126009B2E70 /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF292438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift */,
+				167CBF2B2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard */,
+			);
+			path = SelectCategory;
+			sourceTree = "<group>";
+		};
+		167CBF282438A137009B2E70 /* SelectCategory */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */,
+				167CBF362438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard */,
+			);
+			path = SelectCategory;
+			sourceTree = "<group>";
+		};
+		167CBF2E2438A225009B2E70 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF322438A34A009B2E70 /* UIConstants.swift */,
+				160968F82438F8A100F5E91E /* StyledViewController.swift */,
+				160968FA2439180400F5E91E /* Helper protocols */,
+				167CBF2F2438A22A009B2E70 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		167CBF2F2438A22A009B2E70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				160968FD2439182800F5E91E /* HorizontalCategoryView.swift */,
+				167CBF402438B5ED009B2E70 /* CategoryView.swift */,
+				167CBF302438A23B009B2E70 /* ButtonWithImage.swift */,
+				160968FF2439184B00F5E91E /* CategoryGroupView.swift */,
+				163ABAF22439AFAA006B47C5 /* StyledTextField.swift */,
+				16CD99F22439F26A00072D14 /* ContactFieldView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		167CBF3C2438B4A0009B2E70 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1609690A243920B400F5E91E /* Requests */,
+				167CBF3D2438B4A9009B2E70 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		167CBF3D2438B4A9009B2E70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				167CBF3E2438B4B2009B2E70 /* Category.swift */,
+				1609690D243920E000F5E91E /* Contact.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		16CD99EB2439DDEA00072D14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		167CBEEF2438A022009B2E70 /* Hlpr */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167CBF1A2438A023009B2E70 /* Build configuration list for PBXNativeTarget "Hlpr" */;
+			buildPhases = (
+				167CBEEC2438A022009B2E70 /* Sources */,
+				167CBEED2438A022009B2E70 /* Frameworks */,
+				167CBEEE2438A022009B2E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hlpr;
+			packageProductDependencies = (
+				163ABAF52439C42D006B47C5 /* PhoneNumberKit */,
+			);
+			productName = Hlpr;
+			productReference = 167CBEF02438A022009B2E70 /* Hlpr.app */;
+			productType = "com.apple.product-type.application";
+		};
+		167CBF052438A023009B2E70 /* HlprTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167CBF1D2438A023009B2E70 /* Build configuration list for PBXNativeTarget "HlprTests" */;
+			buildPhases = (
+				167CBF022438A023009B2E70 /* Sources */,
+				167CBF032438A023009B2E70 /* Frameworks */,
+				167CBF042438A023009B2E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167CBF082438A023009B2E70 /* PBXTargetDependency */,
+			);
+			name = HlprTests;
+			productName = HlprTests;
+			productReference = 167CBF062438A023009B2E70 /* HlprTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		167CBF102438A023009B2E70 /* HlprUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 167CBF202438A023009B2E70 /* Build configuration list for PBXNativeTarget "HlprUITests" */;
+			buildPhases = (
+				167CBF0D2438A023009B2E70 /* Sources */,
+				167CBF0E2438A023009B2E70 /* Frameworks */,
+				167CBF0F2438A023009B2E70 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				167CBF132438A023009B2E70 /* PBXTargetDependency */,
+			);
+			name = HlprUITests;
+			productName = HlprUITests;
+			productReference = 167CBF112438A023009B2E70 /* HlprUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		167CBEE82438A022009B2E70 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Hlpr;
+				TargetAttributes = {
+					167CBEEF2438A022009B2E70 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					167CBF052438A023009B2E70 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 167CBEEF2438A022009B2E70;
+					};
+					167CBF102438A023009B2E70 = {
+						CreatedOnToolsVersion = 11.4;
+						TestTargetID = 167CBEEF2438A022009B2E70;
+					};
+				};
+			};
+			buildConfigurationList = 167CBEEB2438A022009B2E70 /* Build configuration list for PBXProject "Hlpr" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 167CBEE72438A022009B2E70;
+			packageReferences = (
+				163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+			);
+			productRefGroup = 167CBEF12438A022009B2E70 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				167CBEEF2438A022009B2E70 /* Hlpr */,
+				167CBF052438A023009B2E70 /* HlprTests */,
+				167CBF102438A023009B2E70 /* HlprUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		167CBEEE2438A022009B2E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */,
+				167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */,
+				167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */,
+				16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */,
+				05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */,
+				167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */,
+				05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF042438A023009B2E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF0F2438A023009B2E70 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		167CBEEC2438A022009B2E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */,
+				1609690E243920E000F5E91E /* Contact.swift in Sources */,
+				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */,
+				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
+				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
+				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
+				05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */,
+				167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */,
+				167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */,
+				0566768B2439471000C12DB6 /* Utilities.swift in Sources */,
+				167CBF2A2438A14F009B2E70 /* SelectCategoryForProvidingHelpViewController.swift in Sources */,
+				05667685243946C400C12DB6 /* SelectTaskViewController.swift in Sources */,
+				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
+				16CD99F32439F26A00072D14 /* ContactFieldView.swift in Sources */,
+				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
+				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
+				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,
+				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
+				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
+				16CD99F12439F24400072D14 /* AddContactInformationViewConfigurator.swift in Sources */,
+				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
+				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
+				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
+				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
+				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF022438A023009B2E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167CBF0B2438A023009B2E70 /* HlprTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		167CBF0D2438A023009B2E70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167CBF162438A023009B2E70 /* HlprUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		167CBF082438A023009B2E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 167CBEEF2438A022009B2E70 /* Hlpr */;
+			targetProxy = 167CBF072438A023009B2E70 /* PBXContainerItemProxy */;
+		};
+		167CBF132438A023009B2E70 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 167CBEEF2438A022009B2E70 /* Hlpr */;
+			targetProxy = 167CBF122438A023009B2E70 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		167CBEF92438A022009B2E70 /* StartViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				167CBEFA2438A022009B2E70 /* Base */,
+			);
+			name = StartViewController.storyboard;
+			sourceTree = "<group>";
+		};
+		167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				167CBEFF2438A023009B2E70 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		167CBF182438A023009B2E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		167CBF192438A023009B2E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		167CBF1B2438A023009B2E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = Hlpr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.Hlpr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		167CBF1C2438A023009B2E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = Hlpr/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.Hlpr;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		167CBF1E2438A023009B2E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = HlprTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.HlprTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hlpr.app/Hlpr";
+			};
+			name = Debug;
+		};
+		167CBF1F2438A023009B2E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = HlprTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.HlprTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hlpr.app/Hlpr";
+			};
+			name = Release;
+		};
+		167CBF212438A023009B2E70 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = HlprUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.HlprUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hlpr;
+			};
+			name = Debug;
+		};
+		167CBF222438A023009B2E70 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YWQT5J65H3;
+				INFOPLIST_FILE = HlprUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = hlpr.HlprUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hlpr;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		167CBEEB2438A022009B2E70 /* Build configuration list for PBXProject "Hlpr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167CBF182438A023009B2E70 /* Debug */,
+				167CBF192438A023009B2E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167CBF1A2438A023009B2E70 /* Build configuration list for PBXNativeTarget "Hlpr" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167CBF1B2438A023009B2E70 /* Debug */,
+				167CBF1C2438A023009B2E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167CBF1D2438A023009B2E70 /* Build configuration list for PBXNativeTarget "HlprTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167CBF1E2438A023009B2E70 /* Debug */,
+				167CBF1F2438A023009B2E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		167CBF202438A023009B2E70 /* Build configuration list for PBXNativeTarget "HlprUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				167CBF212438A023009B2E70 /* Debug */,
+				167CBF222438A023009B2E70 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		163ABAF52439C42D006B47C5 /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 167CBEE82438A022009B2E70 /* Project object */;
+}
