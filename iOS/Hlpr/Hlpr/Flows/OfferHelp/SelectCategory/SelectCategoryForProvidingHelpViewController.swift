@@ -21,10 +21,12 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
         ]
     }()
     
+    private var selectedCategory: Category?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let title = "I need help to"
+        let title = "I can help"
         let styler = SelectCategoryStyler(view: view)
         styler.style(with: categories, title: title)
         
@@ -33,7 +35,18 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
 }
 
 extension SelectCategoryForProvidingHelpViewController: CategoryViewDelegate {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? RecommendedHelpSeekerViewController,
+            let category = selectedCategory {
+            viewController.segueData = RecommendedTaskSegueData(category: category)
+        }
+    }
+    
     func didSelectItem(forCategory category: Category) {
-        /// TODO: Navigate somewhere
+        selectedCategory = category
+        performSegue(
+            withIdentifier: NavigationConstants.Segues.SelectCategoryForProvidingHelpViewController.navigateToRecommendedTask.rawValue,
+            sender: self)
     }
 }
