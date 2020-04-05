@@ -37,6 +37,13 @@ struct UIConstants {
         
         static let button: UIColor = UIColor(red: 0.2, green: 0.2, blue: 0.2, alpha: 1.0)
         static let buttonHighlighted = UIConstants.color.button.withAlphaComponent(0.5)
+        static let error = UIColor(red: 255.0/255.0, green: 57.0/255.0, blue: 57.0/255.0, alpha: 1.0)
+        
+        struct contactField {
+            static let underline = UIColor.lightGray.cgColor
+            static let selectedUnderline = UIColor.blue.cgColor
+            static let errorUnderline = UIColor.red.cgColor
+        }
     }
     
     struct button {

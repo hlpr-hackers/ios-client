@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,20 +14,24 @@
 		0566768B2439471000C12DB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676892439471000C12DB6 /* Utilities.swift */; };
 		0566768C2439471000C12DB6 /* CallUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768A2439471000C12DB6 /* CallUtility.swift */; };
 		05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */; };
-		056676922439D38300C12DB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676912439D38300C12DB6 /* Task.swift */; };
-		056676942439D6BD00C12DB6 /* HelpSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676932439D6BD00C12DB6 /* HelpSeeker.swift */; };
-		056676962439D75500C12DB6 /* AssignableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676952439D75500C12DB6 /* AssignableTask.swift */; };
-		056676982439DCAD00C12DB6 /* SelectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */; };
+		0566769D2439E0E500C12DB6 /* AssignableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566769A2439E0E500C12DB6 /* AssignableTask.swift */; };
+		0566769E2439E0E500C12DB6 /* HelpSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566769B2439E0E500C12DB6 /* HelpSeeker.swift */; };
+		0566769F2439E0E500C12DB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566769C2439E0E500C12DB6 /* Task.swift */; };
+		056676A12439E10F00C12DB6 /* SelectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676A02439E10F00C12DB6 /* SelectTaskViewModel.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
 		160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FF2439184B00F5E91E /* CategoryGroupView.swift */; };
 		160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160969012439189800F5E91E /* SelectCategoryStyler.swift */; };
+		1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690624391FC200F5E91E /* AddContactInformationViewController.swift */; };
+		1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690B243920BF00F5E91E /* RequestHelp.swift */; };
+		1609690E243920E000F5E91E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1609690D243920E000F5E91E /* Contact.swift */; };
+		163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 163ABAF22439AFAA006B47C5 /* StyledTextField.swift */; };
+		163ABAF62439C42D006B47C5 /* PhoneNumberKit in Frameworks */ = {isa = PBXBuildFile; productRef = 163ABAF52439C42D006B47C5 /* PhoneNumberKit */; };
 		167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF32438A022009B2E70 /* AppDelegate.swift */; };
 		167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF52438A022009B2E70 /* SceneDelegate.swift */; };
 		167CBEF82438A022009B2E70 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBEF72438A022009B2E70 /* StartViewController.swift */; };
 		167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEF92438A022009B2E70 /* StartViewController.storyboard */; };
-		167CBEFD2438A023009B2E70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEFC2438A023009B2E70 /* Assets.xcassets */; };
 		167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */; };
 		167CBF0B2438A023009B2E70 /* HlprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF0A2438A023009B2E70 /* HlprTests.swift */; };
 		167CBF162438A023009B2E70 /* HlprUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF152438A023009B2E70 /* HlprUITests.swift */; };
@@ -40,6 +44,7 @@
 		167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */; };
 		167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF3E2438B4B2009B2E70 /* Category.swift */; };
 		167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF402438B5ED009B2E70 /* CategoryView.swift */; };
+		16CD99ED2439DDF700072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,21 +72,24 @@
 		056676892439471000C12DB6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0566768A2439471000C12DB6 /* CallUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUtility.swift; sourceTree = "<group>"; };
 		0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedTaskSegueData.swift; sourceTree = "<group>"; };
-		056676912439D38300C12DB6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		056676932439D6BD00C12DB6 /* HelpSeeker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSeeker.swift; sourceTree = "<group>"; };
-		056676952439D75500C12DB6 /* AssignableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignableTask.swift; sourceTree = "<group>"; };
-		056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskViewModel.swift; sourceTree = "<group>"; };
+		0566769A2439E0E500C12DB6 /* AssignableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignableTask.swift; sourceTree = "<group>"; };
+		0566769B2439E0E500C12DB6 /* HelpSeeker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpSeeker.swift; sourceTree = "<group>"; };
+		0566769C2439E0E500C12DB6 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		056676A02439E10F00C12DB6 /* SelectTaskViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectTaskViewModel.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
 		160968FF2439184B00F5E91E /* CategoryGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryGroupView.swift; sourceTree = "<group>"; };
 		160969012439189800F5E91E /* SelectCategoryStyler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCategoryStyler.swift; sourceTree = "<group>"; };
+		1609690624391FC200F5E91E /* AddContactInformationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContactInformationViewController.swift; sourceTree = "<group>"; };
+		1609690B243920BF00F5E91E /* RequestHelp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHelp.swift; sourceTree = "<group>"; };
+		1609690D243920E000F5E91E /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		163ABAF22439AFAA006B47C5 /* StyledTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledTextField.swift; sourceTree = "<group>"; };
 		167CBEF02438A022009B2E70 /* Hlpr.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hlpr.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		167CBEF32438A022009B2E70 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		167CBEF52438A022009B2E70 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		167CBEF72438A022009B2E70 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		167CBEFA2438A022009B2E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/StartViewController.storyboard; sourceTree = "<group>"; };
-		167CBEFC2438A023009B2E70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		167CBEFF2438A023009B2E70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		167CBF012438A023009B2E70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		167CBF062438A023009B2E70 /* HlprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HlprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,6 +107,7 @@
 		167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryForGettingHelpViewController.swift; sourceTree = "<group>"; };
 		167CBF3E2438B4B2009B2E70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		167CBF402438B5ED009B2E70 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
+		16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PhoneNumberMetadata.json; path = ../../../../../../Downloads/PhoneNumberMetadata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				163ABAF62439C42D006B47C5 /* PhoneNumberKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,11 +139,11 @@
 		0566767F243946C400C12DB6 /* SelectHelpSeeker */ = {
 			isa = PBXGroup;
 			children = (
+				056676A02439E10F00C12DB6 /* SelectTaskViewModel.swift */,
 				05667680243946C400C12DB6 /* SelectTask.storyboard */,
 				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
 				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
 				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
-				056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */,
 			);
 			path = SelectHelpSeeker;
 			sourceTree = "<group>";
@@ -172,6 +182,22 @@
 			path = Styling;
 			sourceTree = "<group>";
 		};
+		1609690424391F8400F5E91E /* AddContactInformation */ = {
+			isa = PBXGroup;
+			children = (
+				1609690624391FC200F5E91E /* AddContactInformationViewController.swift */,
+			);
+			path = AddContactInformation;
+			sourceTree = "<group>";
+		};
+		1609690A243920B400F5E91E /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				1609690B243920BF00F5E91E /* RequestHelp.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
 		167CBEE72438A022009B2E70 = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +228,8 @@
 				167CBEF32438A022009B2E70 /* AppDelegate.swift */,
 				167CBEF52438A022009B2E70 /* SceneDelegate.swift */,
 				167CBF232438A036009B2E70 /* Flows */,
-				167CBEFC2438A023009B2E70 /* Assets.xcassets */,
 				167CBEFE2438A023009B2E70 /* LaunchScreen.storyboard */,
+				16CD99EB2439DDEA00072D14 /* Resources */,
 				167CBF012438A023009B2E70 /* Info.plist */,
 			);
 			path = Hlpr;
@@ -242,6 +268,7 @@
 			isa = PBXGroup;
 			children = (
 				167CBF282438A137009B2E70 /* SelectCategory */,
+				1609690424391F8400F5E91E /* AddContactInformation */,
 			);
 			path = GetHelp;
 			sourceTree = "<group>";
@@ -301,6 +328,7 @@
 				167CBF402438B5ED009B2E70 /* CategoryView.swift */,
 				167CBF302438A23B009B2E70 /* ButtonWithImage.swift */,
 				160968FF2439184B00F5E91E /* CategoryGroupView.swift */,
+				163ABAF22439AFAA006B47C5 /* StyledTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -308,6 +336,7 @@
 		167CBF3C2438B4A0009B2E70 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				1609690A243920B400F5E91E /* Requests */,
 				167CBF3D2438B4A9009B2E70 /* Models */,
 			);
 			path = Domain;
@@ -316,12 +345,21 @@
 		167CBF3D2438B4A9009B2E70 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0566769A2439E0E500C12DB6 /* AssignableTask.swift */,
+				0566769B2439E0E500C12DB6 /* HelpSeeker.swift */,
+				0566769C2439E0E500C12DB6 /* Task.swift */,
 				167CBF3E2438B4B2009B2E70 /* Category.swift */,
-				056676912439D38300C12DB6 /* Task.swift */,
-				056676932439D6BD00C12DB6 /* HelpSeeker.swift */,
-				056676952439D75500C12DB6 /* AssignableTask.swift */,
+				1609690D243920E000F5E91E /* Contact.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		16CD99EB2439DDEA00072D14 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,6 +378,9 @@
 			dependencies = (
 			);
 			name = Hlpr;
+			packageProductDependencies = (
+				163ABAF52439C42D006B47C5 /* PhoneNumberKit */,
+			);
 			productName = Hlpr;
 			productReference = 167CBEF02438A022009B2E70 /* Hlpr.app */;
 			productType = "com.apple.product-type.application";
@@ -412,6 +453,9 @@
 				Base,
 			);
 			mainGroup = 167CBEE72438A022009B2E70;
+			packageReferences = (
+				163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */,
+			);
 			productRefGroup = 167CBEF12438A022009B2E70 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -429,7 +473,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */,
-				167CBEFD2438A023009B2E70 /* Assets.xcassets in Resources */,
+				16CD99ED2439DDF700072D14 /* PhoneNumberMetadata.json in Resources */,
 				167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */,
 				167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */,
 				05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */,
@@ -459,9 +503,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				056676962439D75500C12DB6 /* AssignableTask.swift in Sources */,
+				163ABAF32439AFAA006B47C5 /* StyledTextField.swift in Sources */,
+				1609690E243920E000F5E91E /* Contact.swift in Sources */,
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
+				056676A12439E10F00C12DB6 /* SelectTaskViewModel.swift in Sources */,
+				1609690724391FC200F5E91E /* AddContactInformationViewController.swift in Sources */,
 				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
+				0566769E2439E0E500C12DB6 /* HelpSeeker.swift in Sources */,
+				0566769D2439E0E500C12DB6 /* AssignableTask.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
 				167CBF352438A5A5009B2E70 /* NavigationConstants.swift in Sources */,
 				05667687243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift in Sources */,
@@ -473,15 +522,14 @@
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
-				056676942439D6BD00C12DB6 /* HelpSeeker.swift in Sources */,
+				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,
 				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
 				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
 				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
-				056676982439DCAD00C12DB6 /* SelectTaskViewModel.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
 				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
-				056676922439D38300C12DB6 /* Task.swift in Sources */,
+				0566769F2439E0E500C12DB6 /* Task.swift in Sources */,
 				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -587,7 +635,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -641,7 +689,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -658,7 +706,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWQT5J65H3;
 				INFOPLIST_FILE = Hlpr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -677,7 +725,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YWQT5J65H3;
 				INFOPLIST_FILE = Hlpr/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -813,6 +861,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/marmelroy/PhoneNumberKit";
+			requirement = {
+				kind = upToNextMinorVersion;
+				minimumVersion = 3.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		163ABAF52439C42D006B47C5 /* PhoneNumberKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 163ABAF42439C42C006B47C5 /* XCRemoteSwiftPackageReference "PhoneNumberKit" */;
+			productName = PhoneNumberKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 167CBEE82438A022009B2E70 /* Project object */;
 }

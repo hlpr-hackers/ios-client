@@ -9,7 +9,11 @@
 import Foundation
 
 class SelectTaskViewModel {
-    private var assignableTasks: [AssignableTask] = []
+    private var assignableTasks: [AssignableTask] = [
+        
+    ]
+    
+    
     
     func loadAssignableTasks(completion: ([AssignableTask]) -> Void) {
         
