@@ -14,6 +14,10 @@
 		0566768B2439471000C12DB6 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676892439471000C12DB6 /* Utilities.swift */; };
 		0566768C2439471000C12DB6 /* CallUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768A2439471000C12DB6 /* CallUtility.swift */; };
 		05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */; };
+		056676922439D38300C12DB6 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676912439D38300C12DB6 /* Task.swift */; };
+		056676942439D6BD00C12DB6 /* HelpSeeker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676932439D6BD00C12DB6 /* HelpSeeker.swift */; };
+		056676962439D75500C12DB6 /* AssignableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676952439D75500C12DB6 /* AssignableTask.swift */; };
+		056676982439DCAD00C12DB6 /* SelectTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
@@ -63,6 +67,10 @@
 		056676892439471000C12DB6 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		0566768A2439471000C12DB6 /* CallUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallUtility.swift; sourceTree = "<group>"; };
 		0566768F243951B600C12DB6 /* RecommendedTaskSegueData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommendedTaskSegueData.swift; sourceTree = "<group>"; };
+		056676912439D38300C12DB6 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		056676932439D6BD00C12DB6 /* HelpSeeker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSeeker.swift; sourceTree = "<group>"; };
+		056676952439D75500C12DB6 /* AssignableTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignableTask.swift; sourceTree = "<group>"; };
+		056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectTaskViewModel.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
@@ -125,6 +133,7 @@
 				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
 				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
 				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
+				056676972439DCAD00C12DB6 /* SelectTaskViewModel.swift */,
 			);
 			path = SelectHelpSeeker;
 			sourceTree = "<group>";
@@ -308,6 +317,9 @@
 			isa = PBXGroup;
 			children = (
 				167CBF3E2438B4B2009B2E70 /* Category.swift */,
+				056676912439D38300C12DB6 /* Task.swift */,
+				056676932439D6BD00C12DB6 /* HelpSeeker.swift */,
+				056676952439D75500C12DB6 /* AssignableTask.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -447,6 +459,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				056676962439D75500C12DB6 /* AssignableTask.swift in Sources */,
 				160968FC2439181100F5E91E /* Shadowed.swift in Sources */,
 				0566768C2439471000C12DB6 /* CallUtility.swift in Sources */,
 				160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */,
@@ -460,12 +473,15 @@
 				160969002439184B00F5E91E /* CategoryGroupView.swift in Sources */,
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
+				056676942439D6BD00C12DB6 /* HelpSeeker.swift in Sources */,
 				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
 				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
 				167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */,
 				167CBF312438A23B009B2E70 /* ButtonWithImage.swift in Sources */,
+				056676982439DCAD00C12DB6 /* SelectTaskViewModel.swift in Sources */,
 				167CBEF62438A022009B2E70 /* SceneDelegate.swift in Sources */,
 				167CBF332438A34A009B2E70 /* UIConstants.swift in Sources */,
+				056676922439D38300C12DB6 /* Task.swift in Sources */,
 				160969022439189800F5E91E /* SelectCategoryStyler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
