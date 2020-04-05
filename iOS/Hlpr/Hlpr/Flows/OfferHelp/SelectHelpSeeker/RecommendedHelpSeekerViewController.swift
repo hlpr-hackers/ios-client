@@ -9,11 +9,11 @@
 import Foundation
 import UIKit
 
-class RecommendedHelpSeekerViewController: UIViewController {
+class RecommendedHelpSeekerViewController: StyledViewController {
     
     @IBOutlet weak var callNowButton: UIButton?
     @IBOutlet weak var moreTasksButton: UIButton?
-    
+    var segueData: RecommendedTaskSegueData?
     private let callUtility = Utilities.calling()
     
     override func viewDidLoad() {

@@ -21,6 +21,8 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
         ]
     }()
     
+    private var selectedCategory: Category?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -33,7 +35,18 @@ class SelectCategoryForProvidingHelpViewController: StyledViewController {
 }
 
 extension SelectCategoryForProvidingHelpViewController: CategoryViewDelegate {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? RecommendedHelpSeekerViewController,
+            let category = selectedCategory {
+            viewController.segueData = RecommendedTaskSegueData(category: category)
+        }
+    }
+    
     func didSelectItem(forCategory category: Category) {
-        /// TODO: Navigate somewhere
+        selectedCategory = category
+        performSegue(
+            withIdentifier: NavigationConstants.Segues.SelectCategoryForProvidingHelpViewController.navigateToRecommendedTask.rawValue,
+            sender: self)
     }
 }
