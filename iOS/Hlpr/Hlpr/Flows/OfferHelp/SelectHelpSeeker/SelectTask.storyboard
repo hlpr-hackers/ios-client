@@ -11,7 +11,7 @@
         <!--Select Task-->
         <scene sceneID="Y0L-Nt-3Gz">
             <objects>
-                <viewController id="LIj-BD-Dkg" userLabel="Select Task" sceneMemberID="viewController">
+                <viewController id="LIj-BD-Dkg" userLabel="Select Task" customClass="SelectTaskViewController" customModule="Hlpr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aqc-zk-5Fl">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,22 +36,13 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37l-N0-SNO">
-                                <rect key="frame" x="0.0" y="44" width="414" height="44"/>
-                                <items>
-                                    <navigationItem title="Title" id="rlb-rL-b2h"/>
-                                </items>
-                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qZa-wi-z1B" firstAttribute="top" secondItem="37l-N0-SNO" secondAttribute="bottom" symbolic="YES" id="1rg-og-Guh"/>
                             <constraint firstItem="qZa-wi-z1B" firstAttribute="leading" secondItem="Wv5-9a-ppI" secondAttribute="leading" constant="20" id="A9t-Nx-6HO"/>
                             <constraint firstItem="Wv5-9a-ppI" firstAttribute="trailing" secondItem="qZa-wi-z1B" secondAttribute="trailing" constant="20" id="ECQ-bU-TA3"/>
-                            <constraint firstItem="37l-N0-SNO" firstAttribute="top" secondItem="Wv5-9a-ppI" secondAttribute="top" id="GjZ-kc-mAo"/>
+                            <constraint firstItem="qZa-wi-z1B" firstAttribute="top" secondItem="Wv5-9a-ppI" secondAttribute="top" constant="44" id="IJc-DD-rNG"/>
                             <constraint firstItem="Wv5-9a-ppI" firstAttribute="bottom" secondItem="qZa-wi-z1B" secondAttribute="bottom" id="Uce-rJ-Pu1"/>
-                            <constraint firstAttribute="trailing" secondItem="37l-N0-SNO" secondAttribute="trailing" id="XCT-L1-BqW"/>
-                            <constraint firstItem="37l-N0-SNO" firstAttribute="leading" secondItem="aqc-zk-5Fl" secondAttribute="leading" id="zfF-OR-W5C"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Wv5-9a-ppI"/>
                     </view>

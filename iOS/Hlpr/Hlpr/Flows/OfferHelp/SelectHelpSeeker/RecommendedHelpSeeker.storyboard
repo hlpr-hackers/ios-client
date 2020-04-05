@@ -44,7 +44,7 @@
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-pf-zjB">
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8H-pf-zjB">
                                         <rect key="frame" x="0.0" y="484" width="414" height="302"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <inset key="imageEdgeInsets" minX="-16" minY="0.0" maxX="0.0" maxY="0.0"/>
@@ -52,11 +52,14 @@
                                             <color key="titleColor" systemColor="linkColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-f0-hn0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ugu-f0-hn0">
                                         <rect key="frame" x="0.0" y="788" width="414" height="30"/>
                                         <state key="normal" title="More Tasks"/>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ytD-UJ-PIX" firstAttribute="top" secondItem="ong-aD-UYx" secondAttribute="bottom" constant="2" id="Px9-qE-L3F"/>
+                                </constraints>
                                 <viewLayoutGuide key="safeArea" id="ahG-IP-5J4"/>
                             </stackView>
                         </subviews>
@@ -73,7 +76,7 @@
                         <outlet property="callNowButton" destination="b8H-pf-zjB" id="mBH-pB-Yd5"/>
                         <outlet property="moreTasksButton" destination="ugu-f0-hn0" id="bxX-Sr-Nsl"/>
                         <outlet property="view" destination="ugu-f0-hn0" id="dby-Dt-QMz"/>
-                        <segue destination="eQM-mA-mav" kind="show" id="zvd-OZ-DWn"/>
+                        <segue destination="eQM-mA-mav" kind="show" identifier="navigateToSelectTask" id="zvd-OZ-DWn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="igh-ch-fDI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
