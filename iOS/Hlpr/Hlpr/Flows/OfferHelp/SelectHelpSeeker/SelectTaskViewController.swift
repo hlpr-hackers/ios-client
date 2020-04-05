@@ -12,12 +12,7 @@ import UIKit
 class SelectTaskViewController: StyledViewController {
     private let viewModel = RepositoryFactory.createTasksRepository()
     
-    @IBOutlet weak var collectionView: UICollectionView?
-        
-    @IBOutlet weak var collectionFlowLayout: UICollectionViewFlowLayout?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
 }
