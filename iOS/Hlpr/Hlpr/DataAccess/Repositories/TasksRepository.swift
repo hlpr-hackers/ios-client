@@ -9,13 +9,32 @@
 import Foundation
 
 protocol TasksRepository {
-    func retrieveAssignableTasks(completion: @escaping ([AssignableTask]) -> Void)
+    func retrieveAssignableTasks(for category: Category, completion: @escaping ([AssignableTask]) -> Void)
 }
 
 class TasksRepositoryImpl : TasksRepository {
-    func retrieveAssignableTasks(completion: @escaping ([AssignableTask]) -> Void) {
-        completion([
-            AssignableTask(task: Task(id: "1", name: "Test", description: "Description"), requestingUser: HelpSeeker(id: "id", name: "Ashley", phoneNumber: "07312345"))
-        ])
+    func retrieveAssignableTasks(for category: Category, completion: @escaping ([AssignableTask]) -> Void) {
+        completion(createMockTasks())
+    }
+    
+    private func createMockTasks() -> [AssignableTask] {
+        var tasks: [AssignableTask] = []
+        let names = ["Oriol", "Carolina", "Ashwin"]
+        let baseAge = 60
+        for taskNumber in (0...names.count - 1) {
+            let requestingUser = HelpSeeker(
+                id: "\(taskNumber)",
+                name: names[taskNumber],
+                age: baseAge + taskNumber,
+                phoneNumber: "073123445\(taskNumber)"
+            )
+            let task = Task(
+                id: "\(taskNumber)",
+                name: "Task\(taskNumber)",
+                description: "Please help me get my grocery shopping done :)"
+            )
+            tasks.append(AssignableTask(task: task, requestingUser: requestingUser))
+        }
+        return tasks
     }
 }

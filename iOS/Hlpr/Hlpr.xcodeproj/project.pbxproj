@@ -21,6 +21,7 @@
 		056676BB243A13AC00C12DB6 /* AssignableTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676B8243A13AC00C12DB6 /* AssignableTask.swift */; };
 		056676CC243A144600C12DB6 /* RespositoryFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CA243A144600C12DB6 /* RespositoryFactory.swift */; };
 		056676CD243A144600C12DB6 /* TasksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CB243A144600C12DB6 /* TasksRepository.swift */; };
+		056676CF243A16F300C12DB6 /* RecommmendedTaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */; };
 		160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968F82438F8A100F5E91E /* StyledViewController.swift */; };
 		160968FC2439181100F5E91E /* Shadowed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FB2439181100F5E91E /* Shadowed.swift */; };
 		160968FE2439182800F5E91E /* HorizontalCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 160968FD2439182800F5E91E /* HorizontalCategoryView.swift */; };
@@ -84,6 +85,7 @@
 		056676B8243A13AC00C12DB6 /* AssignableTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssignableTask.swift; sourceTree = "<group>"; };
 		056676CA243A144600C12DB6 /* RespositoryFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RespositoryFactory.swift; sourceTree = "<group>"; };
 		056676CB243A144600C12DB6 /* TasksRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasksRepository.swift; sourceTree = "<group>"; };
+		056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommmendedTaskViewModel.swift; sourceTree = "<group>"; };
 		160968F82438F8A100F5E91E /* StyledViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyledViewController.swift; sourceTree = "<group>"; };
 		160968FB2439181100F5E91E /* Shadowed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shadowed.swift; sourceTree = "<group>"; };
 		160968FD2439182800F5E91E /* HorizontalCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalCategoryView.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				05667681243946C400C12DB6 /* SelectTaskViewController.swift */,
 				05667682243946C400C12DB6 /* RecommendedHelpSeeker.storyboard */,
 				05667683243946C400C12DB6 /* RecommendedHelpSeekerViewController.swift */,
+				056676CE243A16F300C12DB6 /* RecommmendedTaskViewModel.swift */,
 			);
 			path = SelectHelpSeeker;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				167CBEF42438A022009B2E70 /* AppDelegate.swift in Sources */,
 				160968F92438F8A100F5E91E /* StyledViewController.swift in Sources */,
 				1609690C243920BF00F5E91E /* RequestHelp.swift in Sources */,
+				056676CF243A16F300C12DB6 /* RecommmendedTaskViewModel.swift in Sources */,
 				05667690243951B600C12DB6 /* RecommendedTaskSegueData.swift in Sources */,
 				167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */,
 				056676BA243A13AC00C12DB6 /* Task.swift in Sources */,

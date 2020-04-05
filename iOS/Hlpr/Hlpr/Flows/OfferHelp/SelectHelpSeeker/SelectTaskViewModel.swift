@@ -16,6 +16,6 @@ class SelectTaskViewModel {
     }
     
     func loadAssignableTasks(completion: @escaping ([AssignableTask]) -> Void) {
-        repository.retrieveAssignableTasks(completion: completion)
+        ///TODO
     }
 }

@@ -12,4 +12,10 @@ class ViewModelFactory {
     static func createSelectTasksViewModel() -> SelectTaskViewModel {
         return SelectTaskViewModel(repository: RepositoryFactory.createTasksRepository())
     }
+    
+    static func createRecommendedTaskViewModel() -> RecommendedTaskViewModel {
+        return RecommendedTaskViewModel(
+            repository: RepositoryFactory.createTasksRepository()
+        )
+    }
 }
