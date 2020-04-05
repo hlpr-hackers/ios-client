@@ -44,7 +44,7 @@
 		167CBF392438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */; };
 		167CBF3F2438B4B2009B2E70 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF3E2438B4B2009B2E70 /* Category.swift */; };
 		167CBF412438B5ED009B2E70 /* CategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 167CBF402438B5ED009B2E70 /* CategoryView.swift */; };
-		16CD99ED2439DDF700072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */; };
+		16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */ = {isa = PBXBuildFile; fileRef = 16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,7 +107,7 @@
 		167CBF372438A713009B2E70 /* SelectCategoryForGettingHelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectCategoryForGettingHelpViewController.swift; sourceTree = "<group>"; };
 		167CBF3E2438B4B2009B2E70 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		167CBF402438B5ED009B2E70 /* CategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryView.swift; sourceTree = "<group>"; };
-		16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = PhoneNumberMetadata.json; path = ../../../../../../Downloads/PhoneNumberMetadata.json; sourceTree = "<group>"; };
+		16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PhoneNumberMetadata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -357,7 +357,7 @@
 		16CD99EB2439DDEA00072D14 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				16CD99EC2439DDF700072D14 /* PhoneNumberMetadata.json */,
+				16CD99EE2439E42F00072D14 /* PhoneNumberMetadata.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -473,9 +473,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				167CBF002438A023009B2E70 /* LaunchScreen.storyboard in Resources */,
-				16CD99ED2439DDF700072D14 /* PhoneNumberMetadata.json in Resources */,
 				167CBF2C2438A163009B2E70 /* SelectCategoryForProvidingHelp.storyboard in Resources */,
 				167CBEFB2438A022009B2E70 /* StartViewController.storyboard in Resources */,
+				16CD99EF2439E42F00072D14 /* PhoneNumberMetadata.json in Resources */,
 				05667686243946C400C12DB6 /* RecommendedHelpSeeker.storyboard in Resources */,
 				167CBF382438A713009B2E70 /* SelectCategoryForGettingHelp.storyboard in Resources */,
 				05667684243946C400C12DB6 /* SelectTask.storyboard in Resources */,
